@@ -1,2 +1,2 @@
 # vue_project
-+ vue-cli3
++ somthing self in './learn'
