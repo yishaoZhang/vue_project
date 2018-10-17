@@ -27,5 +27,24 @@
         + additional lint features
             + lint on save(suggest)
             + lint and fix on commit
+        + where to config
+            + package.json
+            + in dedicated config files(suggest)
+        + do you want a preset file?
+            + y
+                + file direction
+## note ##
++ when use vue-cli3 create vue project
+    + vue create [project-name]
++ a configuration file(preset) was created in user's home directory('~/.vuerc')
++ we can then use the --preset option to use the remote preset when creating a project:
+    + vue create --preset [localORreomotepro-file-directory] [project-name]
++ view and components(suggest)
+    + component used in router
+        + it will be added in view
+        + and in component we can create folder has the same name with components in view
+        + the folder was covered with compoments that compose the view component
+    + folder components has components out the folder, it's the public component
+
         
         

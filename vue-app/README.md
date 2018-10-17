@@ -1,4 +1,4 @@
-# cli3-project
+# vue-app
 
 ## Project setup
 ```
