@@ -18,30 +18,7 @@ body {
     margin: 0 auto;
     height: 100%;
 }
-#app .container .item-header{
-    background-color: #fafafa;
-    border-bottom: #dedede 1px solid;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-}
 
-.link-span {
-    cursor: pointer;
-    color: #409eff;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.link-span:hover {
-    color: #409eff;
-}
-
-.link-span:active {
-    color: #3a8ee6;
-}
 .clear:after {
     content: '';
     display: block;
@@ -74,4 +51,10 @@ body {
 
 .show {
     display: block;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
 }

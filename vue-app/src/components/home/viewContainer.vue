@@ -28,7 +28,8 @@ export default {
   display: inline-block;
   width: calc(100vw - 182px);
   min-height: calc(100vh - 60px);
-  background: aqua;
   padding: 15px;
+  overflow-x: hidden;
+  font-size: 16px;
 }
 </style>

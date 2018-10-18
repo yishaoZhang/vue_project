@@ -10,3 +10,8 @@
     + scripts.serve
         + vue-cli-service server --open=true --port=8008
         + browser open in new window, and the listening port: 8008
+
+## eslint vscode ##
++ 实现功能vscode 保存 自动按当前eslint 格式化代码
+  + 安装 vscode eslint插件
+  + vscode用户主要配置： eslint.autoFixOnSave=true
