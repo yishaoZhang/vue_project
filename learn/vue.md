@@ -32,3 +32,9 @@ Object.keys(components).forEach(key => {
 ```
 <component :is="isComponent" :name="name" class="isComponentSideBar"></component>
 ```
+## 拦截器 ##
++ 使用UI组件
+  + 主要为信息提示
+    + 如 element-ui 单独引入即可
++ 使用router
+  + 引入外部的公有实引即可

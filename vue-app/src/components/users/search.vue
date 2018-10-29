@@ -1,13 +1,13 @@
 <template>
   <div class="user-search">
     <el-form class="user-search-box clear" :inline="true" :model="userSearch">
-      <el-form-item label="用户ID" class="user-item-show">
+      <!-- <el-form-item label="用户ID" class="user-item-show">
         <el-input
           v-model.trim="userSearch.id"
           placeholder="请输入用户id"
           size="medium">
         </el-input>
-      </el-form-item>
+      </el-form-item> -->
       <el-form-item label="用户名" class="user-item-show">
         <el-input
           v-model.trim="userSearch.name"
@@ -67,11 +67,21 @@ export default {
   methods: {
     userSearchQery () {
       console.log('button click!')
-      _axios.addUser({ name: 'zhang' })
     },
     addNewUserSubmit () {
-      // _axios({ name: 'xu' })
       this.dialogFormVisible = false
+      _axios.addUser(this.addUserForm)
+        .then(re => {
+          if (re.code === 200) {
+            this.$message(re.message)
+            this.$emit('insertSuccess')
+          } else if (re.code === 4011) {
+            this.$message({
+              message: re.message,
+              type: 'error'
+            })
+          }
+        })
     },
     addNewUser () {
       this.dialogFormVisible = true
