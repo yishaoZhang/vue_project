@@ -1,7 +1,7 @@
 ## css居中 ##
 + margin-top: 15%
   + 此百分比是宽度的百分比
-+ left: 50%; top: 50%; tranform: translate(-50%, -50%);
++ left: 50%; top: 50%; transform: translate(-50%, -50%);
   + 父需有足够高度支撑
 
 ## mongodb remove 与delete区别 ##

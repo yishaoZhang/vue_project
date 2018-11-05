@@ -38,3 +38,8 @@ Object.keys(components).forEach(key => {
     + 如 element-ui 单独引入即可
 + 使用router
   + 引入外部的公有实引即可
++ 超时怎么处理？？？
+
+## Vue-Quill-Editor ##
++ 将其套入form toolbar 无法水平居中？
++ 需在外层加一层div?? 否则编辑器高度设定无法产生效果
