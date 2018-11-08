@@ -25,3 +25,24 @@
 
 ## https证书 ##
 + 某https网站，点击浏览器输入栏左侧，可以完整展现证书相关信息
+
+## 后端如何触发前端error? ##
++ res.status(400).send(obj)
++ 接上，上述的err 如何取到obj
+  + err.message
+    + 注意obj传到前端被JSON化
+      + JSON.parse(err.message)
+
+## Object.keys() ##
++ 对于个一个连续字符串
+  + 其将被分割为依次含每个字符元素的数组
+
+## ？？window.URL ##
++ window.URL.createObjectURL(file.raw)
+  + 其中file 对象需完整考查
+
+## 对于node path模块 ##
++ path.join(str, str);
+  + 将多个str 合并 并计算
++ path.relative(str1, str2);
+  + str1 至 str2的相对路径
