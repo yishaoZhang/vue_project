@@ -3,6 +3,7 @@
       default-active="2"
       class="el-menu-vertical"
       @open="handleOpen"
+      @select="handleMenu"
       @close="handleClose">
       <el-menu-item index="2">
         <i class="el-icon-menu"></i>
@@ -11,10 +12,10 @@
       <el-submenu index="1">
         <template slot="title">
           <i class="el-icon-location"></i>
-          <span>内容管理</span>
+          <span>D3</span>
         </template>
         <el-menu-item-group title="分组2">
-          <el-menu-item index="1-3">选项3</el-menu-item>
+          <el-menu-item index="basic">basic</el-menu-item>
         </el-menu-item-group>
         <el-submenu index="1-4">
           <template slot="title">选项4</template>
@@ -53,8 +54,10 @@ export default {
     },
     handleClose () {
       console.log('handleClose')
+    },
+    handleMenu (index) {
+      this.$router.push({ path: index })
     }
-
   }
 }
 </script>
