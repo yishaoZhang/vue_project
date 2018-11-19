@@ -14,8 +14,11 @@
           <i class="el-icon-location"></i>
           <span>D3</span>
         </template>
-        <el-menu-item-group title="分组2">
+        <el-menu-item-group title="图表展示">
           <el-menu-item index="basic">basic</el-menu-item>
+          <el-menu-item index="chart">chart</el-menu-item>
+          <el-menu-item index="draw">draw</el-menu-item>
+          <el-menu-item index="dshap">dShap</el-menu-item>
         </el-menu-item-group>
         <el-submenu index="1-4">
           <template slot="title">选项4</template>

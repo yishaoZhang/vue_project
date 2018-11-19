@@ -11,7 +11,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/login'
+      redirect: '/home'
     },
     {
       path: '/login',
@@ -22,7 +22,7 @@ export default new Router({
       path: '/home',
       name: 'home',
       component: Home,
-      redirect: '/home/users',
+      redirect: '/home/basic',
       children: [
         {
           path: 'users',
@@ -31,6 +31,18 @@ export default new Router({
         {
           path: 'basic',
           component: () => import('./views/Basic.vue')
+        },
+        {
+          path: 'chart',
+          component: () => import('./views/Chart.vue')
+        },
+        {
+          path: 'draw',
+          component: () => import('./views/Draw.vue')
+        },
+        {
+          path: 'dshap',
+          component: () => import('./views/Dshap.vue')
         }
       ]
     }
