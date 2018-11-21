@@ -69,3 +69,6 @@
 ## Uncaught (in promise) ##
 + 该报错最终原因，promise报错，但没有添加异常捕获
   + new Promise().then().catch()
++ 接上，如果后端 res.status(400).send({})
+  + new Promise().then().catch() 将会catch到error
+  + 但前端无法拿到 参数
