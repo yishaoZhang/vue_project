@@ -65,3 +65,7 @@
 + 解决办法
   + 给组件赋值一变化的值，则其将不被缓存
     + :key="Math.random()"
+
+## Uncaught (in promise) ##
++ 该报错最终原因，promise报错，但没有添加异常捕获
+  + new Promise().then().catch()
